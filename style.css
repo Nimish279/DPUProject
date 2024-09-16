@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf8f4;
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto; /* Ensure the entire page can scroll if necessary */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.logo-container {
+    text-align: center; /* Center the logo horizontally */
+    margin-bottom: 0px; /* Add some space below the logo */
+    margin-top: 0px;
+}
+
+.logo {
+    width: 150px; /* Set the desired width for the logo */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.menu-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #9a2827;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.menu-item {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dish-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #9a2827;
+    display: inline-block;
+}
+
+.price {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-container {
+        padding: 10px;
+    }
+
+    .dish-name, .price {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 120px; /* Adjust the logo size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dish-name, .price {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 100px; /* Further adjust logo size for very small screens */
+    }
+}
